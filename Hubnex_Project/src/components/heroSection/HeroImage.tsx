@@ -9,7 +9,7 @@ interface HeroImageProps {
 // }
 export const HeroImage: React.FC<HeroImageProps> = ({ imageUrl }) => {
   return (
-    <div className="lg:w-1/2">
+    <div className="lg:w-2/5">
       <img src={imageUrl} alt="User Illustration" className="w-full rounded-lg shadow-lg" />
     </div>
   );

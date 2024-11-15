@@ -2,7 +2,7 @@ import React from 'react';
 
 export const HeroContent: React.FC = () => {
   return (
-    <div className="lg:w-1/2 space-y-6">
+    <div className="lg:w-3/5 space-y-6">
       <h1 className="text-4xl font-bold text-gray-900">SaaS growth with weekly tips.</h1>
       <p className="text-gray-700 text-lg">
         Clarity gives you the blocks & components you need to create a truly professional website, landing page, or admin panel for your SaaS.
