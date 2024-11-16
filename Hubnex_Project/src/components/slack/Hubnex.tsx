@@ -17,12 +17,10 @@ const Hubnex : React.FC = () => {
   
         {/* Integration Stats Section */}
         <IntegrationStats 
-          stats={["40+", "40+", "40+", "40+", "40+"]} 
-        />
+          stats={["40+", "40+", "40+", "40+", "40+"]} userCount={'3940+ Happy Hubnex Labs Users'}        />
   
         {/* Testimonial Section */}
         <TestimonialSection
-          userCount="3940+ Happy Hubnex Labs Users"
           title="Driving results for leaders across the globe"
           quote="People now recognise that having a good performance conversation means that something happens as a result."
           description="With Landingfolio, the design team can now build design which identifies employees’ career aspirations and goals from which we approach managers and check to see what is happening."

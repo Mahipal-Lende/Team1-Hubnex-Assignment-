@@ -1,7 +1,6 @@
 import React from 'react';
 
 interface TestimonialProps {
-  userCount: string;
   title: string;
   quote: string;
   description: string;
@@ -10,8 +9,7 @@ interface TestimonialProps {
   companyType: string;
 }
 
-export const TestimonialSection: React.FC<TestimonialProps> = ({ 
-  userCount, 
+export const TestimonialSection: React.FC<TestimonialProps> = ({  
   title, 
   quote, 
   description, 
@@ -20,7 +18,6 @@ export const TestimonialSection: React.FC<TestimonialProps> = ({
   companyType 
 }) => (
   <div className="text-center space-y-4">
-    <p className="text-blue-600 font-medium">{userCount}</p>
     <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
 
     <div className="max-w-2xl mx-auto text-left space-y-4">
@@ -37,3 +34,4 @@ export const TestimonialSection: React.FC<TestimonialProps> = ({
     </div>
   </div>
 );
+

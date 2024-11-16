@@ -1,4 +1,4 @@
-
+import TextCard from "../Basic_Component_lib/TextCard";
 
 const SecondPageTheory = () =>{
 
@@ -57,26 +57,19 @@ return(
 <section className="space-y-4">
   <h2 className="text-2xl font-bold text-gray-900">Our Solution</h2>
   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-    <div className="border rounded-lg p-4 shadow-md text-center">
-      <p className="text-blue-500 font-semibold">1</p>
-      <h3 className="text-lg font-semibold text-gray-800">Endpoint Security</h3>
-      <p className="text-gray-600">Our team deployed advanced endpoint protection solutions to safeguard desktops, laptops, and mobile devices from malware, ransomware, and other cyber threats.</p>
-    </div>
-    <div className="border rounded-lg p-4 shadow-md text-center">
-      <p className="text-blue-500 font-semibold">2</p>
-      <h3 className="text-lg font-semibold text-gray-800">Network Security</h3>
-      <p className="text-gray-600">We implemented robust network security measures, including firewall, intrusion detection systems, and secure VPN connections, to protect against unauthorized access.</p>
-    </div>
-    <div className="border rounded-lg p-4 shadow-md text-center">
-      <p className="text-blue-500 font-semibold">3</p>
-      <h3 className="text-lg font-semibold text-gray-800">Security Awareness Training</h3>
-      <p className="text-gray-600">We provided comprehensive security awareness training programs for employees, focusing on cybersecurity best practices and incident response protocols.</p>
-    </div>
-    <div className="border rounded-lg p-4 shadow-md text-center">
-      <p className="text-blue-500 font-semibold">4</p>
-      <h3 className="text-lg font-semibold text-gray-800">Incident Response and Forensics</h3>
-      <p className="text-gray-600">Our data experts took care of incident response and forensics capabilities to detect, respond to, and recover from cybersecurity incidents effectively.</p>
-    </div>
+      <TextCard serialNo={1} 
+      title={"Endpoint Security"} 
+      description={"Our team deployed advanced endpoint protection solutions to safeguard desktops, laptops, and mobile devices from malware, ransomware, and other cyber threats."} ></TextCard>
+
+      <TextCard serialNo={2} 
+      title={"Network Security"} 
+      description={"We implemented robust network security measures, including firewall, intrusion detection systems, and secure VPN connections, to protect against unauthorized access."}>
+      </TextCard>
+      <TextCard serialNo={3} 
+      title={"Security Awareness Training"} 
+      description={"We provided comprehensive security awareness training programs for employees, focusing on cybersecurity best practices and incident response protocols."}>
+      </TextCard>
+      <TextCard serialNo={4} title={"Incident Response and Forensics"} description={"Our data experts took care of incident response and forensics capabilities to detect, respond to, and recover from cybersecurity incidents effectively."}></TextCard>
   </div>
 </section>
 
