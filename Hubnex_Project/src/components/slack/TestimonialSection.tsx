@@ -17,21 +17,29 @@ export const TestimonialSection: React.FC<TestimonialProps> = ({
   companyName, 
   companyType 
 }) => (
+
+
   <div className="text-center space-y-4">
+
+
     <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+
+    <div id="imageandtext" className='flex items-center'>
+    <div id="image_slack" className='w-1/5 flex justify-center'>
+        <img src={logoUrl} alt={`${companyName} Logo`} className="" />
+    </div>
 
     <div className="max-w-2xl mx-auto text-left space-y-4">
       <p className="text-gray-700 text-lg">“{quote}”</p>
       <p className="text-gray-500">“{description}”</p>
 
-      <div className="flex items-center space-x-4">
-        <img src={logoUrl} alt={`${companyName} Logo`} className="w-20 h-20" />
-        <div>
-          <p className="font-semibold text-gray-800">{companyName}</p>
-          <p className="text-gray-500">{companyType}</p>
-        </div>
+      <div className='flex flex-col'>
+      <p className="font-semibold text-gray-800">{companyName}</p>
+      <p className="text-gray-500">{companyType}</p>
       </div>
     </div>
+    </div>
+
   </div>
 );
 

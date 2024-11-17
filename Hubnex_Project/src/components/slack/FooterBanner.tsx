@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCrown } from "react-icons/fa";
 
 interface FooterBannerProps {
   message: string;
@@ -6,10 +7,16 @@ interface FooterBannerProps {
 }
 
 export const FooterBanner: React.FC<FooterBannerProps> = ({ message, buttonText }) => (
-  <div className="flex flex-row bg-gradient-to-r from-purple-600 to-blue-600 text-white py-6 text-center justify-between">
-    <div id="para" className='self-start'>
-    <p className="font-medium pl-5">Work better, together</p>
-    <p className="text-lg font-bold pl-5">{message}</p>
+  <div className="flex flex-row bg-gradient-to-r from-purple-600 to-blue-600 text-white py-6 justify-between">
+
+    <div className=' flex ml-20 items-center'>
+    <div>
+    <FaCrown className='mr-4 text-3xl' />
+    </div>
+    <div id="para" className='flex flex-col'>
+    <p>Work better, together</p>
+    <p className="">{message}</p>
+    </div>
     </div>
     
     <div id="btn">

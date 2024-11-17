@@ -1,19 +1,7 @@
-// import React from 'react'
-
-// const HeroContentWoImg : React.FC = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default HeroContentWoImg;
 
 import React from 'react';
 import Button_NoBG from '../Basic_Component_lib/Button_NoBG';
 import Button_BlueBG from '../Basic_Component_lib/Button_BlueBG';
-
 interface imageurl{
   url : string;
   title : string;
@@ -21,9 +9,9 @@ interface imageurl{
 
 export const HeroContentWoImg: React.FC <imageurl> = ({url, title}) => {
   return (
-    <div className='items-center'>
+    <div className='items-center my-8'>
         <div className="">
-         <h1 className="text-6xl px-3 mx-3 font-semibold text-gray-900 text-center">{title}</h1>
+         <h1 className="text-5xl px-3 mx-3 font-semibold text-gray-900 text-center">{title}</h1>
 
          <div className="flex space-x-4 justify-center my-10">
           <Button_NoBG buttonName={'Contact Us'} ></Button_NoBG>

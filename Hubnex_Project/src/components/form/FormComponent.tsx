@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm: React.FC = () => {
   return (
-    <div className="h-full w-full flex flex-col sm:flex-row">
+    <div className="h-full w-full flex flex-col sm:flex-row my-8">
       {/* Left Section */}
       <div className="bg-[url('https://img.freepik.com/free-photo/skyscrapers-from-low-angle-view_1359-998.jpg?ga=GA1.1.1211299630.1714709361&semt=ais_hybrid')] sm:w-1/3 ml-8 w-full bg-[#E7EEFF] flex flex-col justify-center items-center p-10 sticky max-h-screen">
         {/* Circles */}

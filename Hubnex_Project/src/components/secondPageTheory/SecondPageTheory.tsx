@@ -1,4 +1,7 @@
 import TextCard from "../Basic_Component_lib/TextCard";
+import CybersecurityPercent from "./CybersecurityPercent";
+import ImpactCard from "./ImpactCard";
+import TheorySection from "./TheorySection";
 
 const SecondPageTheory = () =>{
 
@@ -21,18 +24,12 @@ return(
       Clarity gives you the blocks & components you need to create a truly professional website, landing page, or admin panel for your SaaS.
     </p>
     <div className="flex space-x-8 mt-4">
-      <div className="text-center">
-        <p className="text-2xl font-bold text-green-600">78.6%</p>
-        <p className="text-gray-500">Better Data Protection</p>
-      </div>
-      <div className="text-center">
-        <p className="text-2xl font-bold text-green-600">50.6%</p>
-        <p className="text-gray-500">Improvement in Regulatory Compliance</p>
-      </div>
-      <div className="text-center">
-        <p className="text-2xl font-bold text-green-600">25.6%</p>
-        <p className="text-gray-500">Phishing Mitigation</p>
-      </div>
+      <CybersecurityPercent percent={"78.6%"} caption={"Better Data Protection"}/>
+
+      <CybersecurityPercent percent={"50.6%"} caption={"Improvement in Regulatory Compliance"}/>
+
+      <CybersecurityPercent percent={"25.6%"} caption={"Phishing Mitigation"}/>
+      
     </div>
   </div>
 
@@ -44,13 +41,8 @@ return(
 
 {/* <!-- Business Challenge Section --> */}
 <section className="space-y-4">
-  <h2 className="text-2xl font-bold text-gray-900">Business Challenge</h2>
-  <p className="text-gray-600">
-    One major problem they identified was the heightened risks of data breaches and unauthorized access to sensitive customer
-    information, including personal and financial data. This was further exacerbated by the possibilities of increasingly
-    sophisticated phishing and social engineering attacks targeting employees and customers, posing risks of credential theft
-    and fraud...
-  </p>
+  <TheorySection heading={"Business Challenge"} 
+  paragraph={"One major problem they identified was the heightened risks of data breaches and unauthorized access to sensitive customer information,including personal and financial data. This was further exacerbated by the possibilities of increasingly sophisticated phishing and social engineering attacks targeting employees and customers, posing risks of credential theft and fraud... "}/>
 </section>
 
 {/* <!-- Solution Steps Section --> */}
@@ -74,39 +66,29 @@ return(
 </section>
 
 {/* <!-- Impact Section --> */}
-<section className="space-y-4">
-  <h2 className="text-2xl font-bold text-gray-900">Impact</h2>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div className="text-center space-y-2">
-      <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
-        <span className="text-2xl font-bold text-blue-500">60%</span>
-      </div>
-      <h3 className="text-lg font-semibold text-gray-800">Enhanced Patient Engagement</h3>
-      <p className="text-gray-600">We were successful in the development and deployment of the app before the planned timeline...</p>
-    </div>
-    <div className="text-center space-y-2">
-      <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
-        <span className="text-2xl font-bold text-blue-500">39%</span>
-      </div>
-      <h3 className="text-lg font-semibold text-gray-800">Improved Treatment Adherence</h3>
-      <p className="text-gray-600">Positive feedback from healthcare providers regarding improved patient adherence to treatment plans...</p>
-    </div>
-    <div className="text-center space-y-2">
-      <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
-        <span className="text-2xl font-bold text-blue-500">53%</span>
-      </div>
-      <h3 className="text-lg font-semibold text-gray-800">Performance Scalability</h3>
-      <p className="text-gray-600">Seamless scalability and optimal performance of the mobile application, even during periods of peak user activity.</p>
-    </div>
-  </div>
+<h2 className="text-2xl font-bold text-gray-900">Impact</h2>
+<p>We were successful in the development and deployment of the app before the planned timeline and supported their vision of making mental health more accessible to their patients, minus the hassles.</p>
+<section className="space-y-4 justify-between">
+
+    <ImpactCard title={"Enhanced Patient Engagement:"}
+            paragraph={"We were successful in the development and deployment of the app before the planned timeline and supported their vision of making mental health more accessible to their patients, minus the hassles."} value={60}>
+    </ImpactCard>
+    <ImpactCard title={"Improved Treatment Adherence:"}
+            paragraph={"Positive feedback from healthcare providers regarding improved patient adherence to treatment plans and therapy sessions was facilitated through the mobile application, resulting in more effective therapy outcomes."} value={39}>
+    </ImpactCard>
+    <ImpactCard title={"Performance Scalability:"}
+            paragraph={"Seamless scalability and optimal performance of the mobile application, even during periods of peak user activity helped us ensure uninterrupted service availability and user satisfaction."} value={53}>
+    </ImpactCard>
+  
+
 </section>
+
 
 {/* <!-- Conclusion Section --> */}
 <section className="space-y-4">
-  <h2 className="text-2xl font-bold text-gray-900">Conclusion</h2>
-  <p className="text-gray-600">
-  We continue to deliver robust cybersecurity solutions to their team to mitigate cyber risks and enhance cyber resilience in the insurance industry. We hope leveraging our cybersecurity solution helps the client stand true to their commitment to their customers on delivering a secure and resilient digital future with them.
-  </p>
+
+  <TheorySection heading={"Conclusion"} 
+  paragraph={"We continue to deliver robust cybersecurity solutions to their team to mitigate cyber risks and enhance cyber resilience in the insurance industry. We hope leveraging our cybersecurity solution helps the client stand true to their commitment to their customers on delivering a secure and resilient digital future with them."}/>
 </section>
 
 </div>
@@ -118,3 +100,34 @@ return(
 }
 
 export default SecondPageTheory;
+
+
+{/* <section className="space-y-4"> */}
+  
+  {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="text-center space-y-2">
+      <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
+        <span className="text-2xl font-bold text-blue-500 h-10 w-10">
+          <AnimatedCircularProgressBar max={100} value={60} min={0} gaugePrimaryColor={"blue"} gaugeSecondaryColor={"white"}/>
+          60%
+        </span>
+      </div>
+      <h3 className="text-lg font-semibold text-gray-800">Enhanced Patient Engagement</h3>
+      <p className="text-gray-600">We were successful in the development and deployment of the app before the planned timeline...</p>
+    </div> */}
+    {/* <div className="text-center space-y-2">
+      <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
+        <span className="text-2xl font-bold text-blue-500">39%</span>
+      </div>
+      <h3 className="text-lg font-semibold text-gray-800">Improved Treatment Adherence</h3>
+      <p className="text-gray-600">Positive feedback from healthcare providers regarding improved patient adherence to treatment plans...</p>
+    </div> */}
+    {/* <div className="text-center space-y-2">
+      <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
+        <span className="text-2xl font-bold text-blue-500">53%</span>
+      </div>
+      <h3 className="text-lg font-semibold text-gray-800">Performance Scalability</h3>
+      <p className="text-gray-600">Seamless scalability and optimal performance of the mobile application, even during periods of peak user activity.</p>
+    </div> */}
+  {/* </div> */}
+{/* </section> */}

@@ -6,6 +6,7 @@ import './App.css'
 import FirstPage from './pages/firstPage/FirstPage';
 import SecondPage from './pages/secondPage/SecondPage';
 import ThirdPage from './pages/thirdPage/ThirdPage';
+import FourthPage from './pages/fourthPage/FourthPage';
 import FifthPage from './pages/fifthPage/FifthPage';
 import SixthPage from './pages/sixthPage/SixthPage';
 
@@ -14,40 +15,23 @@ function App() {
 
   return (
     <>
-        {/* <HeroSection></HeroSection>
-        <Hubnex></Hubnex> */}
         
-        <FirstPage></FirstPage>
-
+        <FirstPage/>
         <hr className="my-5 bg-slate-950"/>
-
-
         <div>Second Page Starts</div>
-
-        <SecondPage></SecondPage>
-
+        <SecondPage/>
         <hr className="my-5 bg-slate-950"/>
-
-
         <div>Third Page Starts</div>
-
-          <ThirdPage></ThirdPage>
-
-          <hr className="my-5 bg-slate-950"/>
-
-          <div>Fourth Page Starts</div>
-
-          <hr className="my-5 bg-slate-950"/>
-
-          <div>Fifth Page Starts</div>
-
-          <FifthPage></FifthPage>
-
-          <hr className="my-5 bg-slate-950"/>
-
-          <div>Sixth Page started</div>
-
-          <SixthPage></SixthPage>
+        <ThirdPage/>
+        <hr className="my-5 bg-slate-950"/>
+        <div>Fourth Page Starts</div>
+        <FourthPage/>
+        <hr className="my-5 bg-slate-950"/>
+        <div>Fifth Page Starts</div>
+        <FifthPage/>
+        <hr className="my-5 bg-slate-950"/>
+        <div>Sixth Page started</div>
+        <SixthPage/>
 
 
 
