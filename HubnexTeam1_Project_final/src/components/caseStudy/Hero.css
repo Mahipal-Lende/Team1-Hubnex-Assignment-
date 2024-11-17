@@ -1,0 +1,21 @@
+.containerCS{
+  background: linear-gradient(180deg, #4348D0 0%, #1C1F3B 100%);
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  text-align: center;
+  color: white;
+  
+}
+.head1{
+  font-weight: bold;
+  padding-top: 20px;
+}
+.para1{
+  font-size: larger;
+}
+
+.tag{
+  Position: absolute top-4 left-4;
+ 
+}
