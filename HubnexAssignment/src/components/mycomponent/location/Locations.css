@@ -1,0 +1,43 @@
+.locations {
+    display: flex;
+    gap: 15px;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .location-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    position: relative;
+  }
+  
+  .location-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .location-card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .location-card.coming-soon span {
+    background-color: #7a5eff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .LocComponent{
+    display: flex;
+    justify-content:space-between;
+  }

@@ -1,0 +1,37 @@
+.containerRv{
+    box-sizing: border-box;
+    height: auto;
+    width: 90vw;
+    padding: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+}
+
+.Rv_card{
+    /* height: 100%; */
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+
+.Rv_img{
+    height: 50%;
+    width: 50%;
+    /* background-color: blue; */
+    flex-shrink: 0;
+}
+
+.imagestyle{
+    width: 80%;
+}
+
+.Rv_Desc{
+    margin: 15px;
+    width: 100%;
+}

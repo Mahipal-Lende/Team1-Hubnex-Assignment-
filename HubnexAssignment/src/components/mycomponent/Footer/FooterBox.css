@@ -1,0 +1,12 @@
+.container1{
+background: linear-gradient(to right, #1a1c22, #42464b, #a9aaad);
+}
+
+.btn-foot{
+    background-color: rgb(73, 73, 73);
+    width: auto;
+    padding: 17px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px
+}

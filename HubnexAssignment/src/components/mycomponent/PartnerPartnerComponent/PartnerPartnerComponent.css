@@ -1,0 +1,22 @@
+
+
+.ParentBoxContainer{
+  padding: 50px;
+  margin: 50px;
+}
+
+
+.card_Partner{
+    padding: 3em;
+    width: 30%;
+    
+    }
+    
+    .partner_button{
+      background-color: rgb(70, 70, 200);
+      text-align: center;
+      margin-top: 40%;
+      color: white;
+      
+    
+    }

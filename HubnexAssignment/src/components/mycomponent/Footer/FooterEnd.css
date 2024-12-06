@@ -1,0 +1,248 @@
+
+
+.footer {
+    /* background-color: #f7f8fa; */
+    color: #333;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    /* background-color: #03346e; */
+    width: 80vw;
+    margin: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    max-width: 220px;
+  }
+  
+  .footer-section.about {
+    margin-top: -2rem;
+    /* background-color: #03346e; */
+    min-width: 450px;
+    padding: 5px;
+  }
+  .footer-section.about img {
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  
+  .footer-section h2 {
+    font-size: 30px;
+    word-spacing: 0.5px;
+    color: #111;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .footer-section p {
+    font-weight: 100;
+    font-size: 19px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Links Styling */
+  .footer-section.links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-section.links h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section.links ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: lighter;
+  }
+  
+  .footer-section.links ul li:hover {
+    color: #5a5858; /* Adjust to match the accent color */
+  }
+  
+  /* Social Icons Styling */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .social-icons i {
+    font-size: 30px;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .social-icons i:hover {
+    color: #03346e;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+  }
+  .Alllinks {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 35px;
+  }
+  
+  /* Media Queries */
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .footer-section {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-section.about {
+      min-width: auto;
+      margin-top: 0;
+    }
+  
+    .footer-section h2 {
+      font-size: 24px;
+    }
+  
+    .footer-section p {
+      font-size: 16px;
+    }
+  
+    .footer-section.links h3 {
+      font-size: 18px;
+    }
+  
+    .footer-section.links ul li {
+      font-size: 14px;
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .footer {
+      width: 90vw;
+      padding: 20px;
+    }
+  
+    .footer-content {
+      gap: 15px;
+    }
+  
+    .footer-section h2 {
+      font-size: 20px;
+    }
+  
+    .footer-section p {
+      font-size: 14px;
+    }
+  
+    .footer-section.links h3 {
+      font-size: 16px;
+    }
+  
+    .footer-section.links ul li {
+      font-size: 13px;
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    .social-icons i {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer-section h2 {
+      font-size: 22px;
+      text-align: start;
+      font-weight: bold;
+    }
+  
+    .footer-section p {
+      font-size: 12px;
+      text-align: start;
+    }
+    .footer-section.links {
+      order: -1;
+    }
+  
+    .footer-section.links h3 {
+      font-size: 14px;
+      text-align: start;
+    }
+  
+    .footer-section.links ul li {
+      text-align: left;
+      font-size: 12px;
+      margin-right: 150px;
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center; /* Centers icons horizontally */
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .social-icons i {
+      font-size: 20px;
+    }
+  
+    .Alllinks {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-bottom {
+      font-size: 10px;
+      padding-top: 10px;
+    }
+  }
+
+
